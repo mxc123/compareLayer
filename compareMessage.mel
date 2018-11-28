@@ -1,0 +1,8 @@
+python "import sys";
+python "import os";
+//python "print sys.argv";
+//python "sys.path.append(os.path.dirname(sys.argv[-1]))";
+python "import compareLayer";//
+python "reload(compareLayer)";
+python "print sys.argv";
+python "compareLayer.run(sys.argv[-2],sys.argv[-1])";

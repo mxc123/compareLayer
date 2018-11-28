@@ -1,0 +1,8 @@
+python "import sys";
+python "import os";
+//python "print sys.argv";
+python "sys.path.append(os.path.dirname(sys.argv[-1]))";
+python "import export_json";//
+python "reload(export_json)";
+python "print sys.argv";
+python "export_json.run(sys.argv[-1])";
